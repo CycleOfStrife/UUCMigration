@@ -1,4 +1,6 @@
 # U<sup>2</sup>CMigration: User-Unaware Container Live Migration Strategy
+U2CMigration is a User-Unaware Container live Migration strategy for containerized workloads. It employs a lightweight and autonomous two-phase prediction by analyzing container memory pages across various workloads. We utilize the data shift prediction for stable memory pages (Phase-I). For unstable memory pages (Phase-II), we develop an attention-based prediction that jointly considers the spatio-temporal characteristics of memory pages and system-level features. Guided by dirty page predictions, we further develop a container live migration strategy that judiciously decides the optimal stop-and-copy iteration with the minimum amount of memory dirty pages. We have implemented an open-source prototype of U2CMigration based on the CRIU (Checkpoint/Restore In Userspace) project. Extensive prototype experiments demonstrate that U2CMigration reduces the container migration duration by 26.1%−47.9% and the downtime by 21.3%−32.6% compared with the state-of-the-art solutions.
+
 # Getting Started
 ## Dependencies
 
